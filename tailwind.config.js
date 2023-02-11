@@ -10,6 +10,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      lightGray: "#EFF2F4",
+      darkerGray: "#979797",
+      accentColor: "#127FFF",
+    },
   },
   plugins: [],
 };
