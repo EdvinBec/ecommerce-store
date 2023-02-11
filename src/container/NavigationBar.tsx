@@ -2,11 +2,11 @@ import SearchBar from "@/components/SearchBar";
 import Image from "next/image";
 import React from "react";
 import hamburgerMenu from "../assets/img/hamburgerMenu.png";
-import logo from "../assets/img/logo-colored.png";
-import person from "../assets/img/person.svg";
-import shoppingCart from "../assets/img/shopping_cart.svg";
-import heart from "../assets/img/heart.svg";
-import message from "../assets/img/message.svg";
+import logo from "../assets/img/logo-colored-long.png";
+import person from "../assets/img/user.png";
+import shoppingCart from "../assets/img/shopping-cart.png";
+import heart from "../assets/img/heart.png";
+import message from "../assets/img/messenger.png";
 import CategoryButton from "@/components/CategoryButton";
 import CurrencySelector from "@/components/CurrencySelector";
 
@@ -24,32 +24,36 @@ const NavigationBar = (props: Props) => {
               className="md:hidden"
             />
           </button>
-          <Image src={logo} alt="logo" className="w-[30px] md:w-[40px]" />
+          <Image
+            src={logo}
+            alt="logo"
+            className="w-[200px] md:w-[220px] xl:w-[250px] h-auto cursor-pointer"
+          />
         </div>
-        <div className="hidden md:block w-[55%]">
+        <div className="hidden md:block w-[40%] xl:w-[55%]">
           <SearchBar />
         </div>
-        <div className="flex items-center md:gap-6 gap-[20px]">
+        <div className="flex items-center gap-4 md:gap-4 xl:gap-[20px]">
           <button className="flex flex-col items-center justify-between md:h-[40px] hover:opacity-60 transition-all duration-300 cursor-pointer">
-            <Image src={shoppingCart} alt="shoppingCart" />
+            <Image src={shoppingCart} alt="shoppingCart" className="w-[18px]" />
             <label className="text-xs hidden md:block text-darkerGray">
               Cart
             </label>
           </button>
           <button className="md:flex flex-col items-center justify-between md:h-[40px] hidden hover:opacity-60 transition-all duration-300 cursor-pointer">
-            <Image src={message} alt="messages" />
+            <Image src={message} alt="messages" className="w-[18px]" />
             <label className="text-xs hidden md:block text-darkerGray">
               Messages
             </label>
           </button>
           <button className="md:flex flex-col justify-between items-center md:h-[40px] hidden hover:opacity-60 transition-all duration-300 cursor-pointer">
-            <Image src={heart} alt="orders" />
+            <Image src={heart} alt="orders" className="w-[18px]" />
             <label className="text-xs hidden md:block text-darkerGray">
               Orders
             </label>
           </button>
           <button className="flex flex-col items-center justify-between md:h-[40px] hover:opacity-60 transition-all duration-300 cursor-pointer">
-            <Image src={person} alt="person" />
+            <Image src={person} alt="person" className="w-[18px]" />
             <label className="text-xs hidden md:block text-darkerGray">
               Profile
             </label>

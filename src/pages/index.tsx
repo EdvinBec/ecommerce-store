@@ -1,3 +1,4 @@
+import Header from "@/container/Header";
 import NavigationBar from "@/container/NavigationBar";
 import Head from "next/head";
 
@@ -12,6 +13,9 @@ export default function Home() {
       </Head>
       <main className="flex flex-col items-center">
         <NavigationBar />
+        <div className="w-full mt-4">
+          <Header />
+        </div>
       </main>
     </>
   );
