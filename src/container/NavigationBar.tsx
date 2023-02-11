@@ -28,21 +28,29 @@ const NavigationBar = (props: Props) => {
           <SearchBar />
         </div>
         <div className="flex items-center md:gap-6 gap-[20px]">
-          <button className="flex flex-col items-center justify-between md:h-[40px]">
+          <button className="flex flex-col items-center justify-between md:h-[40px] hover:opacity-60 transition-all duration-300 cursor-pointer">
             <Image src={shoppingCart} alt="shoppingCart" />
-            <label className="text-xs hidden md:block">Cart</label>
+            <label className="text-xs hidden md:block text-darkerGray">
+              Cart
+            </label>
           </button>
-          <button className="md:flex flex-col items-center justify-between md:h-[40px] hidden">
+          <button className="md:flex flex-col items-center justify-between md:h-[40px] hidden hover:opacity-60 transition-all duration-300 cursor-pointer">
             <Image src={message} alt="messages" />
-            <label className="text-xs hidden md:block">Messages</label>
+            <label className="text-xs hidden md:block text-darkerGray">
+              Messages
+            </label>
           </button>
-          <button className="md:flex flex-col justify-between items-center md:h-[40px] hidden">
+          <button className="md:flex flex-col justify-between items-center md:h-[40px] hidden hover:opacity-60 transition-all duration-300 cursor-pointer">
             <Image src={heart} alt="orders" />
-            <label className="text-xs hidden md:block">Orders</label>
+            <label className="text-xs hidden md:block text-darkerGray">
+              Orders
+            </label>
           </button>
-          <button className="flex flex-col items-center justify-between md:h-[40px]">
+          <button className="flex flex-col items-center justify-between md:h-[40px] hover:opacity-60 transition-all duration-300 cursor-pointer">
             <Image src={person} alt="person" />
-            <label className="text-xs hidden md:block">Profile</label>
+            <label className="text-xs hidden md:block text-darkerGray">
+              Profile
+            </label>
           </button>
         </div>
       </div>
