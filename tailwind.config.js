@@ -14,6 +14,7 @@ module.exports = {
       lightGray: "#EFF2F4",
       darkerGray: "#979797",
       accentColor: "#127FFF",
+      text: "#505050",
     },
   },
   plugins: [],
